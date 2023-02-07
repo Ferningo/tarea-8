@@ -32,3 +32,5 @@ const myFunc = () => {
   const jsonDisplayArea = document.getElementById("json-display-area");
   jsonDisplayArea.innerHTML = myInfo;
 };
+
+const createCardView = () => {};
