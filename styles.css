@@ -1,6 +1,25 @@
-#json-area, #final-product{
+#json-area, #final-product,#input-area,#json-display-area{
     border: solid black 1px;
     min-height: 500px;
+}
 
+#json-display-area{
+    font-size: 20px;
+}
+
+label,#submit-btn{
+    display: block;
+}
+
+#description{
+    min-height: 100px;
+}
+
+.container{
+    margin-top: 200px;
+}
+
+#submit-btn{
+    margin-top: 30px;
 }
 

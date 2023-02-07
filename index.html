@@ -17,16 +17,57 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container vertical-center">
       <div class="row" id="inputs">
-        <div class="col">
-          <div class="row"><button>1</button></div>
-          <div class="row"><button>2</button></div>
-          <div class="row"><button>3</button></div>
+        <div class="col" id="input-area">
+          <p>1</p>
+          <form action="#">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" />
+
+            <div class="row">
+              <label for="description">Descripcion</label>
+              <textarea
+                name="something"
+                id="description"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <div class="row"></div>
+            <label for="price">Precio</label>
+            <input type="text" id="price" />
+
+            <label for="hotness">Picor</label>
+            <input type="text" id="hotness" />
+
+            <label for="img-path">Ruta de la imagen</label>
+            <input type="text" id="img-path" />
+
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              id="submit-btn"
+              onclick="myFunc()"
+            >
+              Crear
+            </button>
+          </form>
         </div>
-        <div class="col" id="json-area">2</div>
+        <div class="col  id="json-area">
+          <div class="row">
+            <textarea
+              name=""
+              id="json-display-area"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
         <div class="col" id="final-product">3</div>
       </div>
     </div>
